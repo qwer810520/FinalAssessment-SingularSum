@@ -1,8 +1,8 @@
 import UIKit
 
-func finalAssessment() -> Int {
+func finalAssessment(min:Int, max:Int) -> Int {
     var x = 0
-    for i in 1...100 {
+    for i in min...max {
         if i % 2 != 0 {
             x += i
         }
@@ -11,4 +11,4 @@ func finalAssessment() -> Int {
 }
 
 
-finalAssessment()
+finalAssessment(min: 1, max: 100)
